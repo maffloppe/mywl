@@ -1,7 +1,23 @@
 proxies:
-    - client-fingerprint: random
+    - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1F7\U0001F1FA VK — #1|pool"
+      name: "\U0001F1F7\U0001F1FA Beget — #1|pool"
+      network: raw
+      port: "26424"
+      reality-opts:
+        public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+        short-id: 23103e1e
+      server: 45.12.75.242
+      servername: ya.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+      xudp: true
+    - client-fingerprint: firefox
+      encryption: none
+      name: "\U0001F1F7\U0001F1FA Timeweb — #5|pool"
       network: xhttp
       port: "2053"
       server: 185.141.227.180
@@ -15,13 +31,23 @@ proxies:
         host: dismissaltree.net
         mode: auto
         path: /api/v1/upload
+        reuse-settings:
+            c-max-reuse-times: 64-128
+            h-keep-alive-period: 0
+            h-max-request-times: "0"
+            h-max-reusable-secs: "0"
+            max-concurrency: 16-32
+            max-connections: "0"
+        session-length: "0"
+        x-padding-bytes: 100-1000
+        x-padding-obfs-mode: false
       xudp: true
     - alpn:
         - h2
         - +http/1.1
       client-fingerprint: firefox
       encryption: none
-      name: "\U0001F1F7\U0001F1FA VK — #8|pool"
+      name: "\U0001F1F7\U0001F1FA Timeweb — #6|pool"
       network: xhttp
       port: "2053"
       server: 78.159.250.84
@@ -36,44 +62,10 @@ proxies:
         mode: auto
         path: /api/v1/upload
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F7\U0001F1FA Beget — #9|pool"
-      network: raw
-      port: "26424"
-      reality-opts:
-        public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-        short-id: 23103e1e
-      server: 45.12.75.242
-      servername: ya.ru
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-      xudp: true
-    - client-fingerprint: safari
-      encryption: none
-      name: "\U0001F1EC\U0001F1E7 United Kingdom — #47|pool"
-      network: xhttp
-      port: "443"
-      reality-opts:
-        public-key: pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w
-        short-id: 6bc02f1c474260c3
-      server: 84.38.181.249
-      servername: open.spotify.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
-      xhttp-opts:
-        path: /
-      xudp: true
     - client-fingerprint: firefox
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1 The Netherlands — #53|pool"
+      name: "\U0001F1F3\U0001F1F1 The Netherlands — #30|pool"
       network: raw
       port: "443"
       reality-opts:
@@ -87,33 +79,31 @@ proxies:
       udp: true
       uuid: 3c23a041-b686-4d93-af6b-2d793f5c45dc
       xudp: true
-    - client-fingerprint: firefox
+    - client-fingerprint: safari
       encryption: none
-      grpc-opts:
-        grpc-service-name: api
-      name: "\U0001F1F3\U0001F1F1 The Netherlands — #55|pool"
-      network: grpc
+      name: "\U0001F1F3\U0001F1F1 The Netherlands — #31|pool"
+      network: xhttp
       port: "443"
       reality-opts:
-        public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-        short-id: 15bcc0a77c3cacdf
-      server: 45.139.26.179
-      servername: ads.x5.ru
+        public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
+        short-id: ""
+      server: 84.201.146.8
+      servername: max.ru
       sub_tag: pool
       tls: true
       type: vless
       udp: true
-      uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+      uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+      xhttp-opts:
+        host: max.ru
       xudp: true
-    - alpn:
-        - h2
-      client-fingerprint: qq
+    - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1 The Netherlands — #56|pool"
+      name: "\U0001F1F3\U0001F1F1 The Netherlands — #34|pool"
       network: raw
       port: "8443"
-      server: 196.240.125.3
+      server: 196.240.125.253
       servername: vusr-6ac431f4.adhil.uk
       sub_tag: pool
       tls: true
@@ -124,24 +114,21 @@ proxies:
     - client-fingerprint: firefox
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F5\U0001F1F1 Poland — #60|pool"
+      name: "\U0001F1F3\U0001F1F1 The Netherlands — #35|pool"
       network: raw
-      port: "443"
-      reality-opts:
-        public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-        short-id: db04ce8bdb8900f1
-      server: 109.120.181.153
-      servername: eh.vk.ru
+      port: "8443"
+      server: 196.240.125.3
+      servername: vusr-6ac431f4.adhil.uk
       sub_tag: pool
       tls: true
       type: vless
       udp: true
-      uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+      uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
       xudp: true
-    - client-fingerprint: safari
+    - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F5\U0001F1F1 Poland — #73|pool"
+      name: "\U0001F1F5\U0001F1F1 Poland — #51|pool"
       network: raw
       port: "443"
       reality-opts:
@@ -158,7 +145,7 @@ proxies:
     - client-fingerprint: firefox
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1F7 Türkiye — #77|pool"
+      name: "\U0001F1F9\U0001F1F7 Türkiye — #54|pool"
       network: raw
       port: "443"
       reality-opts:
@@ -254,7 +241,7 @@ proxies:
       ws-opts:
         headers:
             Host: vspeedfast.org
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
         path: /linkvws
       xudp: true
     - client-fingerprint: chrome
@@ -271,8 +258,42 @@ proxies:
       ws-opts:
         headers:
             Host: asia.csmaster.site
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
         path: ""
+      xudp: true
+    - client-fingerprint: firefox
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F5\U0001F1F1 LTE 1 | тгк: @rostunnel|pool"
+      network: raw
+      port: "443"
+      reality-opts:
+        public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+        short-id: db04ce8bdb8900f1
+      server: 109.120.181.153
+      servername: eh.vk.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F7\U0001F1FA LTE 3 | тгк: @rostunnel|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+        short-id: bbe46bd8f6b96839
+      server: 144.31.50.236
+      servername: yandex.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
       xudp: true
     - client-fingerprint: firefox
       flow: xtls-rprx-vision
@@ -405,23 +426,6 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1 LTE 59 | тгк: @rostunnel|pool"
-      network: tcp
-      port: "12512"
-      reality-opts:
-        public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-        short-id: e692a8250d2e2fd0
-      server: 46.137.202.178
-      servername: www.intel.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
       name: "\U0001F1F5\U0001F1F1 LTE 75 | тгк: @rostunnel|pool"
       network: raw
       port: "443"
@@ -470,42 +474,36 @@ proxies:
       udp: true
       uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
       xudp: true
-    - client-fingerprint: unsafe
-      encryption: none
-      name: "hamedp71::\U0001F1EF\U0001F1F5|pool"
+    - client-fingerprint: chrome
+      name: "hamedp71::\U0001F1EB\U0001F1F7|pool"
       network: ws
+      password: humanity
       port: "443"
-      server: 104.16.10.135
-      servername: jp3.yohototo.top
+      server: 212.183.88.136
+      skip-cert-verify: false
+      sni: www.calmlunch.com
       sub_tag: pool
-      tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
       ws-opts:
         headers:
-            Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /tyxyws
-      xudp: true
-    - client-fingerprint: unsafe
-      encryption: none
-      name: patt_62|pool
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+        path: /assignment
+    - client-fingerprint: chrome
+      name: "hamedp71::\U0001F1EB\U0001F1F7-01|pool"
       network: ws
+      password: humanity
       port: "443"
-      server: 104.16.10.22
-      servername: jp3.yohototo.top
+      server: 104.17.147.22
+      skip-cert-verify: false
+      sni: www.calmlunch.com
       sub_tag: pool
-      tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
       ws-opts:
         headers:
-            Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
-        path: /tyxyws
-      xudp: true
+            User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
+        path: /assignment
     - client-fingerprint: unsafe
       encryption: none
       name: "hamedp71::\U0001F1EF\U0001F1F5-01|pool"
@@ -521,9 +519,24 @@ proxies:
       ws-opts:
         headers:
             Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
         path: /tyxyws
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7[www.v2nodes.com] trojan-FR-... #8|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 165.215.250.14
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+        path: /assignment
     - client-fingerprint: unsafe
       encryption: none
       name: "hamedp71::\U0001F1EF\U0001F1F5-02|pool"
@@ -539,40 +552,92 @@ proxies:
       ws-opts:
         headers:
             Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+        path: /tyxyws
+      xudp: true
+    - client-fingerprint: unsafe
+      encryption: none
+      name: -01|pool
+      network: ws
+      port: "443"
+      server: 188.114.97.6
+      servername: jp3.yohototo.top
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+      ws-opts:
+        headers:
+            Host: jp3.yohototo.top
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
         path: /tyxyws
       xudp: true
     - client-fingerprint: chrome
-      name: "hamedp71::\U0001F1EB\U0001F1F7-03|pool"
+      name: Tel-@ProxyMtAlpha♟️|pool
       network: ws
       password: humanity
       port: "443"
-      server: 104.16.72.41
+      server: 188.114.97.6
       skip-cert-verify: false
-      sni: www.calmlunch.com
+      sni: www.pleadcourt.org
       sub_tag: pool
       type: trojan
       udp: true
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
         path: /assignment
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "♾️\U0001D5DD\U0001D5FC\U0001D5F6\U0001D5FB➠\U0001F194️@ATLAS_V2VPN\U0001F193️\U0001F4F6‎\U0001F6F0️599\U0001F310\U0001F195|pool"
+    - client-fingerprint: chrome
+      encryption: none
+      name: '>>@configV2rayNG::US|pool'
+      network: ws
+      port: "443"
+      server: 188.114.97.6
+      servername: a.cwvps.eu.org
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+      ws-opts:
+        headers:
+            Host: a.cwvps.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+        path: /ws
+      xudp: true
+    - client-fingerprint: unsafe
+      encryption: none
+      name: patt_41|pool
+      network: ws
+      port: "443"
+      server: 104.21.6.186
+      servername: jp3.yohototo.top
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+      ws-opts:
+        headers:
+            Host: jp3.yohototo.top
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
+        path: /tyxyws
+      xudp: true
+    - client-fingerprint: qq
+      name: "hamedp71::\U0001F1F3\U0001F1F1|pool"
       network: ws
       password: humanity
       port: "443"
-      server: 172.67.139.14
+      server: 8.47.69.0
       skip-cert-verify: false
-      sni: www.volumeroot.com
+      sni: www.pleadcourt.org
       sub_tag: pool
       type: trojan
       udp: true
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
         path: /assignment
     - encryption: none
       name: "hamedp71::\U0001F1E9\U0001F1EA|pool"
@@ -586,7 +651,7 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net
       xudp: true
     - client-fingerprint: unsafe
@@ -604,27 +669,39 @@ proxies:
       ws-opts:
         headers:
             Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
         path: /tyxyws
       xudp: true
-    - client-fingerprint: unsafe
-      encryption: none
-      name: CA-02|pool
+    - client-fingerprint: chrome
+      name: "\U0001F3C1RELAY-45.130.125.160-0547|pool"
       network: ws
+      password: humanity
       port: "443"
-      server: 104.16.10.9
-      servername: v2ray.simspeedup.com
+      server: 45.130.125.160
+      skip-cert-verify: false
+      sni: www.calmlunch.com
       sub_tag: pool
-      tls: true
-      type: vless
+      type: trojan
       udp: true
-      uuid: 3c52e091-6714-4915-949f-2149fe69951b
       ws-opts:
         headers:
-            Host: v2ray.simspeedup.com
-            User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-        path: /ws
-      xudp: true
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+        path: /assignment
+    - client-fingerprint: chrome
+      name: "hamedp71::\U0001F1EB\U0001F1F7-04|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 172.64.152.23
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36
+        path: /assignment
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -693,6 +770,23 @@ proxies:
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
+    - client-fingerprint: ios
+      encryption: none
+      flow: xtls-rprx-vision
+      name: EPODONIOS-50|pool
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.225
+      servername: yahoo.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -743,6 +837,23 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8139899|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.16
+      servername: yahoo.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+      xudp: true
     - client-fingerprint: ios
       encryption: none
       flow: xtls-rprx-vision
@@ -770,23 +881,6 @@ proxies:
         public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
         short-id: c39cc7310a
       server: 169.40.42.232
-      servername: yahoo.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: VCONFING|pool
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.90
       servername: yahoo.com
       sub_tag: pool
       tls: true
@@ -856,6 +950,23 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
+      name: '@meliproxyy-01|pool'
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.75
+      servername: yahoo.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
       name: "hamedp71::\U0001F1FA\U0001F1F8-04|pool"
       network: tcp
       port: "443"
@@ -885,7 +996,7 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /
       xudp: true
     - alpn:
@@ -923,23 +1034,6 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - alpn:
-        - h2
-      client-fingerprint: chrome
-      name: 6|pool
-      network: ws
-      password: humanity
-      port: "443"
-      server: chat.openai.com
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36
-        path: /assignment
     - client-fingerprint: chrome
       encryption: none
       name: "hamedp71::\U0001F1FA\U0001F1F8-05|pool"
@@ -964,6 +1058,20 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      name: "hamedp71::\U0001F1EB\U0001F1F7-05|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+        path: /assignment
     - cipher: aes-128-gcm
       name: '@i10VPN⁸|pool'
       password: shadowsocks
@@ -1170,7 +1278,7 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
         path: /fp
       xudp: true
     - cipher: aes-256-gcm
@@ -1193,6 +1301,23 @@ proxies:
       type: vless
       udp: true
       uuid: nasnet
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: EPODONIOS-66|pool
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+        short-id: 5ea112e8
+      server: 157.228.155.185
+      servername: addons.mozilla.org
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
       xudp: true
     - client-fingerprint: chrome
       encryption: none
@@ -1424,7 +1549,7 @@ proxies:
       ws-opts:
         headers:
             Host: bab-6.site
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
         path: /vws/
       xudp: true
     - client-fingerprint: chrome
@@ -1438,17 +1563,6 @@ proxies:
       sub_tag: pool
       type: trojan
       udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F3\U0001F1F1|pool"
-      network: tcp
-      password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-      port: "4443"
-      server: 77.74.123.106
-      skip-cert-verify: false
-      sni: grape-test-italy.dynuddns.net
-      sub_tag: pool
-      type: trojan
-      udp: true
     - cipher: aes-128-cfb
       name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-85|pool"
       password: shadowsocks
@@ -1457,19 +1571,6 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: FR-02|pool
-      network: tcp
-      port: "52006"
-      server: 31.77.227.6
-      servername: bigdick.gamegrow.ru
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -1546,23 +1647,6 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: EPODONIOS-77|pool
-      network: tcp
-      port: "8443"
-      reality-opts:
-        public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-        short-id: d8d4ee24
-      server: 31.76.82.113
-      servername: storage.yandexcloud.net
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 81aefb7f-1a78-4394-9428-7200b1dfcaf9
-      xudp: true
     - cipher: chacha20-ietf-poly1305
       name: NL|pool
       password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -1579,6 +1663,21 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      name: "hamedp71::\U0001F1EB\U0001F1F7-08|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 185.220.100.168
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+        path: /assignment
     - cipher: chacha20-ietf-poly1305
       name: '@Rayan_Config-82.38.31.205-@beepassvpn_bot|pool'
       password: k1dBOmOB4oqi7Ump37a1bQ
@@ -1606,7 +1705,7 @@ proxies:
       uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-91|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-92|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.192
@@ -1645,7 +1744,7 @@ proxies:
       ws-opts:
         headers:
             Host: bab-6.site
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
         path: /vws/
       xudp: true
     - cipher: chacha20-ietf-poly1305
@@ -1675,22 +1774,20 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "hamedp71::\U0001F1F3\U0001F1F1-02|pool"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-        short-id: 3cef317b
-      server: 157.228.150.34
-      servername: addons.mozilla.org
+    - encryption: none
+      name: "\U0001F1EB\U0001F1F7-01|pool"
+      network: ws
+      port: "80"
+      server: 152.228.162.19
       sub_tag: pool
-      tls: true
       type: vless
       udp: true
-      uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+      uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+      ws-opts:
+        headers:
+            Host: ""
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+        path: /vless/
       xudp: true
     - cipher: chacha20-ietf-poly1305
       name: "hamedp71::\U0001F1F3\U0001F1F1-03|pool"
@@ -1908,23 +2005,6 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-111|pool"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-        short-id: ad6e08b22389abd2
-      server: 89.125.13.202
-      servername: d3-ee1.cloud-cdn.xyz
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-      xudp: true
     - cipher: chacha20-ietf-poly1305
       name: TEL:Father_vpn-02|pool
       password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -1938,6 +2018,14 @@ proxies:
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.189
+      sub_tag: pool
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F3F3️ ShatakVPN 544862|pool"
+      password: k1dBOmOB4oqi7Ump37a1bQ
+      port: "8080"
+      server: 82.38.31.198
       sub_tag: pool
       type: ss
       udp: true
@@ -1964,7 +2052,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
         path: /RoBeRt
       xudp: true
     - cipher: chacha20-ietf-poly1305
@@ -2015,33 +2103,13 @@ proxies:
       ws-opts:
         headers:
             Host: fdghyt.com
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-        path: /vpn-wss/fluxor/59011/
-      xudp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1EA\U0001F1EA|pool"
-      network: ws
-      port: "8443"
-      server: 77.72.85.246
-      servername: fdghyt.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-      ws-opts:
-        headers:
-            Host: fdghyt.com
-            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /vpn-wss/fluxor/59011/
       xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-114|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-112|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -2100,7 +2168,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
         path: /
       xudp: true
     - name: "\U0001F1F5\U0001F1F1|pool"
@@ -2114,7 +2182,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /
       xudp: true
     - client-fingerprint: chrome
@@ -2197,7 +2265,7 @@ proxies:
       client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-140|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-138|pool"
       network: tcp
       port: "52006"
       server: 179.254.71.20
@@ -2225,6 +2293,23 @@ proxies:
       udp: true
       uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
       xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: '@VConfing-01|pool'
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA
+        short-id: 29455a3a790acbd0
+      server: 131.123.13.93
+      servername: 1mcfn.67resserv67.info
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+      xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1|pool"
       network: ws
       port: "80"
@@ -2236,8 +2321,22 @@ proxies:
       ws-opts:
         headers:
             Host: platform103.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
         path: /platform103
+      xudp: true
+    - name: "hamedp71::\U0001F1E8\U0001F1F1-01|pool"
+      network: ws
+      port: "80"
+      server: 64.176.2.25
+      sub_tag: pool
+      type: vless
+      udp: true
+      uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+      ws-opts:
+        headers:
+            Host: platform109.halalkhor.info
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
+        path: /platform109
       xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1-02|pool"
       network: ws
@@ -2250,7 +2349,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform117.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
         path: /platform117
       xudp: true
     - encryption: none
@@ -2265,7 +2364,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform113.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /platform113
       xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1-04|pool"
@@ -2279,7 +2378,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform106.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
         path: /platform106
       xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1-05|pool"
@@ -2293,7 +2392,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform108.halalkhor.info
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
         path: /platform108
       xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1-06|pool"
@@ -2308,7 +2407,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform108.halalkhor.info
-            User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Slackware/Chrome/12.0.742.100 Safari/534.30
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
         path: /platform108
       xudp: true
     - name: CL|pool
@@ -2322,7 +2421,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
         path: /platform107
       xudp: true
     - name: "hamedp71::\U0001F1E8\U0001F1F1-07|pool"
@@ -2337,7 +2436,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform102.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
         path: /platform102
       xudp: true
     - name: CL-01|pool
@@ -2351,7 +2450,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform118.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
         path: /platform118
       xudp: true
     - name: CL-02|pool
@@ -2365,7 +2464,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform101.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
         path: /platform101
       xudp: true
     - encryption: none
@@ -2394,7 +2493,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform102.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
         path: /platform102
       xudp: true
     - client-fingerprint: firefox
@@ -2411,8 +2510,25 @@ proxies:
       ws-opts:
         headers:
             Host: fdghyt.com
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
         path: /vpn-wss/fluxor/59011/
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-147|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+        short-id: 87709fed663228e5
+      server: 109.104.106.149
+      servername: d3-ro.cloud-cdn.xyz
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
       xudp: true
     - client-fingerprint: edge
       encryption: none
@@ -2472,23 +2588,6 @@ proxies:
       type: vless
       udp: true
       uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: qoli_309|pool
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-        short-id: 5a018643df03
-      server: 107.181.151.241
-      servername: www.microsoft.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
       xudp: true
     - client-fingerprint: chrome
       encryption: none
@@ -2618,7 +2717,7 @@ proxies:
         - h2
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-165|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-163|pool"
       network: xhttp
       port: "443"
       server: 206.71.158.124
@@ -2633,6 +2732,21 @@ proxies:
         mode: stream-one
         path: /kavir
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7[www.v2nodes.com] trojan-FR-...|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 185.255.179.166
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+        path: /assignment
     - alpn:
         - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
       client-fingerprint: chrome
@@ -2652,23 +2766,6 @@ proxies:
       udp: true
       uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
       xudp: true
-    - client-fingerprint: randomized
-      encryption: none
-      flow: xtls-rprx-vision
-      name: qoli_379|pool
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-        short-id: 3cef317b
-      server: 157.228.160.166
-      servername: addons.mozilla.org
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-      xudp: true
     - name: "\U0001F1FF\U0001F1E6[www.v2nodes.com] vless-ZA-1... #2|pool"
       network: ws
       port: "80"
@@ -2680,33 +2777,8 @@ proxies:
       ws-opts:
         headers:
             Host: platform117.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
         path: /platform117
-      xudp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-173|pool"
-      password: zDNVedRFPQexG9v
-      port: "445"
-      server: 51.222.12.127
-      sub_tag: pool
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "hamedp71::\U0001F1EB\U0001F1F7-10|pool"
-      network: tcp
-      port: "8451"
-      reality-opts:
-        public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-        short-id: 5ea112e8
-      server: 155.212.187.222
-      servername: addons.mozilla.org
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
       xudp: true
     - cipher: chacha20-ietf-poly1305
       name: "\U0001F1F7\U0001F1F4139787|pool"
@@ -2728,7 +2800,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform118.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /platform118
       xudp: true
     - cipher: chacha20-ietf-poly1305
@@ -2739,6 +2811,23 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: Free-06|pool
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+        short-id: 64c1fe36c7846400
+      server: 195.133.73.65
+      servername: anyfile2file.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -2773,23 +2862,6 @@ proxies:
       udp: true
       uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: '@Tarkshodeh-04|pool'
-      network: tcp
-      port: "40443"
-      reality-opts:
-        public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-        short-id: ee33
-      server: 72.56.40.97
-      servername: deepl.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
-      xudp: true
     - name: "\U0001F1FF\U0001F1E6[www.v2nodes.com] vless-ZA-1... #3|pool"
       network: ws
       port: "80"
@@ -2802,7 +2874,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform102.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /platform102
       xudp: true
     - name: "\U0001F1FF\U0001F1E6[www.v2nodes.com] vless-ZA-1...|pool"
@@ -2817,7 +2889,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform103.halalkhor.info
-            User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
         path: /platform103
       xudp: true
     - alpn:
@@ -2842,7 +2914,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-186|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-184|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -2865,7 +2937,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-187|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-185|pool"
       password: shadowsocks
       port: "443"
       server: 149.22.87.204
@@ -2883,7 +2955,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-188|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-186|pool"
       network: tcp
       port: "43000"
       reality-opts:
@@ -2913,16 +2985,6 @@ proxies:
       udp: true
       uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_1|1.2MB/s|pool"
-      password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-      port: "8886"
-      server: 45.32.52.173
-      skip-cert-verify: true
-      sni: 45.32.52.173
-      sub_tag: pool
-      type: trojan
-      udp: true
     - client-fingerprint: chrome
       name: JP-01|pool
       network: tcp
@@ -2979,7 +3041,7 @@ proxies:
       type: trojan
       udp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-189|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-187|pool"
       password: UX82473651
       port: "443"
       server: comic-poodle.rooster465.autos
@@ -3163,7 +3225,7 @@ proxies:
       type: trojan
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-192|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-190|pool"
       password: 3eOFeNssde7PYYMv
       port: "80"
       server: 84.247.155.196
@@ -3235,22 +3297,6 @@ proxies:
       sni: concrete-aardvark.rooster465.autos
       sub_tag: pool
       type: trojan
-      udp: true
-    - cipher: aes-256-gcm
-      name: "hamedp71::\U0001F1F0\U0001F1F7|pool"
-      password: e4FCWrgpkji3QY
-      port: "9101"
-      server: 141.164.45.187
-      sub_tag: pool
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: '>>@shadowproxy66::XX|pool'
-      password: TEzjfAYq2IjtuoS
-      port: "6679"
-      server: 141.164.45.187
-      sub_tag: pool
-      type: ss
       udp: true
     - encryption: none
       name: Telegram:@v2rayng3|pool
@@ -3326,7 +3372,7 @@ proxies:
       uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
       xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-200|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-198|pool"
       password: TEzjfAYq2IjtuoS
       port: "6697"
       server: 141.164.45.187
@@ -3372,7 +3418,7 @@ proxies:
       type: trojan
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-201|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-199|pool"
       password: lGqs95QkFHo2NV
       port: "5498"
       server: 141.164.45.187
@@ -3421,7 +3467,7 @@ proxies:
       type: trojan
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-202|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-200|pool"
       password: KixLvKzwjekG00rm
       port: "8000"
       server: 141.164.45.187
@@ -3537,7 +3583,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
         path: /GOrbEh
       xudp: true
     - cipher: aes-256-gcm
@@ -3587,7 +3633,7 @@ proxies:
       ws-opts:
         headers:
             Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
         path: /tyxyws
       xudp: true
     - client-fingerprint: chrome
@@ -3660,7 +3706,7 @@ proxies:
       type: ss
       udp: true
     - cipher: rc4-md5
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-207|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-205|pool"
       password: 14fFPrbezE3HDZzsMOr6
       port: "8080"
       server: 68.183.227.4
@@ -3699,7 +3745,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+            User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
         path: /vws/
       xudp: true
     - client-fingerprint: chrome
@@ -3719,6 +3765,23 @@ proxies:
       uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
       xudp: true
     - client-fingerprint: chrome
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-208|pool"
+      network: ws
+      port: "443"
+      server: 139.180.220.7
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
       name: "hamedp71::\U0001F1E9\U0001F1EA-06|pool"
       network: ws
       port: "443"
@@ -3732,7 +3795,7 @@ proxies:
       ws-opts:
         headers:
             Host: s3ws.ragingbull.de5.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /wsrb7k2m
       xudp: true
     - client-fingerprint: chrome
@@ -3820,7 +3883,7 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31
         path: /vws/
       xudp: true
     - client-fingerprint: chrome
@@ -3964,19 +4027,19 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: ID|pool
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-212|pool"
       network: tcp
-      port: "29172"
+      port: "16006"
       reality-opts:
-        public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+        public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
         short-id: ""
-      server: 103.172.197.2
-      servername: aws.amazon.com
+      server: 103.172.197.3
+      servername: www.cloudflare.com
       sub_tag: pool
       tls: true
       type: vless
       udp: true
-      uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+      uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
       xudp: true
     - client-fingerprint: chrome
       encryption: none
@@ -4005,20 +4068,6 @@ proxies:
       sub_tag: pool
       type: trojan
       udp: true
-    - name: "\U0001F1F9\U0001F1ED[www.v2nodes.com] vless-TH-1...|pool"
-      network: ws
-      port: "80"
-      server: 103.86.49.57
-      sub_tag: pool
-      type: vless
-      udp: true
-      uuid: 3c52e091-6714-4915-949f-2149fe69951b
-      ws-opts:
-        headers:
-            Host: aIs.SpEeDtEsT.nEt
-            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
-        path: /ws
-      xudp: true
     - client-fingerprint: firefox
       name: "hamedp71::\U0001F1E6\U0001F1FA|pool"
       network: tcp
@@ -4154,7 +4203,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: EPODONIOS-143|pool
+      name: EPODONIOS-144|pool
       network: tcp
       port: "40443"
       reality-opts:
@@ -4172,7 +4221,7 @@ proxies:
       encryption: none
       grpc-opts:
         grpc-service-name: rex-eb0bf76b710ce763
-      name: EPODONIOS-144|pool
+      name: EPODONIOS-145|pool
       network: grpc
       port: "2443"
       reality-opts:
@@ -4186,36 +4235,10 @@ proxies:
       udp: true
       uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
       xudp: true
-    - encryption: none
-      http-opts:
-        headers:
-            Host:
-                - play.google.com
-        path:
-            - /
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-222|pool"
-      network: http
-      port: "8080"
-      server: 91.107.151.122
-      sub_tag: pool
-      type: vless
-      udp: true
-      uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
-      xudp: true
-    - encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-224|pool"
-      network: tcp
-      port: "2045"
-      server: 38.135.54.24
-      sub_tag: pool
-      type: vless
-      udp: true
-      uuid: 58dc9d3c-2623-49dc-87dc-d587b2412eb7
-      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-225|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-221|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4232,7 +4255,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-243|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-239|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4247,7 +4270,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-252|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-248|pool"
       password: cdBIDV42DCwnfIN
       port: "8119"
       server: 51.79.64.198
@@ -4257,7 +4280,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-278|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-274|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4271,9 +4294,34 @@ proxies:
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-278|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 104.18.35.86
+      skip-cert-verify: false
+      sni: www.volumerOot.coM.
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+        path: /assignment
+    - cipher: aes-256-gcm
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-289|pool"
+      password: Y6R9pAtvxxzmGC
+      port: "9090"
+      server: 141.164.45.187
+      sub_tag: pool
+      type: ss
+      udp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-308|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-303|pool"
       network: ws
       port: "8443"
       server: www.large-files.info
@@ -4285,13 +4333,13 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
         path: /var/www/html/video/preview/download/i8o0la
       xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-313|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-308|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4306,7 +4354,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-315|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-310|pool"
       password: 8tmnvX5zYuWGVIDP2jglZw
       port: "1080"
       server: 5.78.51.123
@@ -4314,7 +4362,7 @@ proxies:
       type: ss
       udp: true
     - cipher: 2022-blake3-aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-355|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-350|pool"
       password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
       port: "2083"
       server: 51.222.107.43
@@ -4324,7 +4372,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-379|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-374|pool"
       network: tcp
       port: "23576"
       reality-opts:
@@ -4341,7 +4389,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-380|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-375|pool"
       network: tcp
       port: "443"
       server: 57.129.96.67
@@ -4355,7 +4403,7 @@ proxies:
     - client-fingerprint: ios
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-383|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-378|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4372,7 +4420,7 @@ proxies:
     - alpn:
         - h2
       client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-403|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-398|pool"
       network: ws
       password: av7fquzvuc99xcs9
       port: "2087"
@@ -4384,12 +4432,12 @@ proxies:
       udp: true
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-405|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-400|pool"
       network: tcp
       port: "23576"
       reality-opts:
@@ -4406,7 +4454,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-435|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-429|pool"
       network: tcp
       port: "23576"
       reality-opts:
@@ -4422,7 +4470,7 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-442|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-436|pool"
       network: ws
       port: "443"
       server: cf.877774.xyz
@@ -4435,11 +4483,11 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /
       xudp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-450|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-444|pool"
       password: UX82473651
       port: "443"
       server: guided-ferret.rooster465.autos
@@ -4451,7 +4499,7 @@ proxies:
     - client-fingerprint: ios
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-463|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-457|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4469,7 +4517,7 @@ proxies:
         - h2
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-464|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-458|pool"
       network: xhttp
       port: "443"
       server: 50.7.216.173
@@ -4490,7 +4538,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-488|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-482|pool"
       network: tcp
       port: "40443"
       reality-opts:
@@ -4504,10 +4552,18 @@ proxies:
       udp: true
       uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
       xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-495|pool"
+      password: amazonskr05
+      port: "443"
+      server: 13.38.79.223
+      sub_tag: pool
+      type: ss
+      udp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-527|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-522|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4522,14 +4578,14 @@ proxies:
       uuid: 3984a6ee-9fc6-4219-93fd-706c59e02171
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-536|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-531|pool"
       password: CJmTCCx7Ltud
       port: "8388"
       server: 108.181.58.239
       sub_tag: pool
       type: ss
       udp: true
-    - name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-540|pool"
+    - name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-535|pool"
       network: ws
       port: "80"
       server: platform118.golnamakcert.top
@@ -4540,42 +4596,21 @@ proxies:
       ws-opts:
         headers:
             Host: platform118.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /platform118
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-550|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-546|pool"
       password: CJmTCCx7Ltud
       port: "8388"
       server: 108.181.126.122
       sub_tag: pool
       type: ss
       udp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-552|pool"
-      network: ws
-      port: "8443"
-      server: iiproxy88.iiproxy.com
-      servername: iiproxy88.iiproxy.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-      ws-opts:
-        headers:
-            Host: iiproxy88.iiproxy.com
-            User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2
-        path: /
-      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-556|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-552|pool"
       network: tcp
       port: "23576"
       reality-opts:
@@ -4590,7 +4625,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
       xudp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-574|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-570|pool"
       password: UX82473651
       port: "443"
       server: loved-shark.rooster465.autos
@@ -4602,7 +4637,7 @@ proxies:
     - client-fingerprint: ios
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-580|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-576|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -4617,7 +4652,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-597|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-593|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.181
@@ -4625,7 +4660,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-604|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-600|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.49
@@ -4633,16 +4668,36 @@ proxies:
       type: ss
       udp: true
     - cipher: rc4-md5
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-607|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-603|pool"
       password: 14fFPrbezE3HDZzsMOr6
       port: "8080"
       server: 138.199.42.68
       sub_tag: pool
       type: ss
       udp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-612|pool"
+      network: xhttp
+      port: "443"
+      server: cdn8.alihapp.com
+      servername: cdn8.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn8.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-621|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-617|pool"
       network: ws
       port: "443"
       server: 95.182.95.178
@@ -4655,11 +4710,11 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
         path: /fp
       xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-623|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-619|pool"
       password: shadowsocks
       port: "443"
       server: 37.19.198.244
@@ -4669,7 +4724,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-625|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-621|pool"
       network: tcp
       port: "23576"
       reality-opts:
@@ -4687,7 +4742,7 @@ proxies:
         - h2
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-626|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-622|pool"
       network: ws
       port: "443"
       server: 199.232.239.239
@@ -4700,11 +4755,11 @@ proxies:
       ws-opts:
         headers:
             Host: uol258ehdmsohzh.global.ssl.fastly.net
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
         path: /?ed=2056/?TELEGRAM--BYA--@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
       xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-635|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-632|pool"
       password: XKFKl2rULjIp74
       port: "8008"
       server: 15.204.247.175
@@ -4712,7 +4767,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-642|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-639|pool"
       password: 9epp3o9ng8ej59uv
       port: "14249"
       server: 45.128.12.20
@@ -4720,7 +4775,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-643|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-640|pool"
       password: 2KUaE2a8NWTvuCZ3
       port: "9066"
       server: 213.183.63.60
@@ -4735,7 +4790,7 @@ proxies:
                 - dynu.com
         path:
             - /
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-655|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-652|pool"
       network: http
       port: "42538"
       server: fln3.mobileemdad.top
@@ -4745,7 +4800,7 @@ proxies:
       uuid: 11a1238e-348b-47c7-ac36-47ed50dd911c
       xudp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-676|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-673|pool"
       password: UX82473651
       port: "443"
       server: sacred-anemone.rooster465.autos
@@ -4757,7 +4812,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-726|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-725|pool"
       network: tcp
       port: "8443"
       reality-opts:
@@ -4772,7 +4827,7 @@ proxies:
       uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-740|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-739|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "443"
       server: 82.38.31.162
@@ -4780,7 +4835,7 @@ proxies:
       type: ss
       udp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-745|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-744|pool"
       password: UX82473651
       port: "443"
       server: pleased-albacore.rooster465.autos
@@ -4790,7 +4845,7 @@ proxies:
       type: trojan
       udp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-751|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-750|pool"
       network: ws
       password: e309e031-991e-4656-9934-44d10deb8fd8
       port: "2053"
@@ -4802,40 +4857,8 @@ proxies:
       udp: true
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
         path: /0962
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-781|pool"
-      network: ws
-      password: humanity
-      port: "443"
-      server: 188.42.145.180
-      skip-cert-verify: false
-      sni: www.volumeroot.com
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
-        path: /assignment
-    - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-790|pool"
-      network: ws
-      password: humanity
-      port: "443"
-      server: 188.114.98.0
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
-        path: /assignment
     - cipher: aes-128-gcm
       name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-803|pool"
       password: shadowsocks
@@ -4862,13 +4885,23 @@ proxies:
       uuid: 11a1238e-348b-47c7-ac36-47ed50dd911c
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-831|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-830|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.3
       sub_tag: pool
       type: ss
       udp: true
+    - encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-832|pool"
+      network: tcp
+      port: "45299"
+      server: 104.243.33.154
+      sub_tag: pool
+      type: vless
+      udp: true
+      uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -4887,15 +4920,40 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
       xudp: true
     - cipher: rc4-md5
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-855|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-856|pool"
       password: 14fFPrbezE3HDZzsMOr6
       port: "8080"
       server: 137.184.174.93
       sub_tag: pool
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-882|pool"
+      password: Y6R9pAtvxxzmGC
+      port: "5000"
+      server: 51.222.200.165
+      sub_tag: pool
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-883|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+        short-id: 4be4110078ebed4a
+      server: de2.srv.vbuste.ru
+      servername: de2.srv.vbuste.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-886|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-887|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.176
@@ -4906,7 +4964,7 @@ proxies:
         - http/1.1
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-888|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-889|pool"
       network: ws
       port: "2053"
       server: fr.api-music-fa.com
@@ -4919,7 +4977,7 @@ proxies:
       ws-opts:
         headers:
             Host: fr.api-music-fa.com
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36
         path: /api/voip/updates/static/fr2035
       xudp: true
     - client-fingerprint: chrome
@@ -4949,21 +5007,6 @@ proxies:
       sub_tag: pool
       type: trojan
       udp: true
-    - encryption: mlkem768x25519plus.native.0rtt.rK2aQSz2wOAaLoJe61rb_TmbQxnF87VEAxGzd3TVmlY
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-930|pool"
-      network: ws
-      port: "8080"
-      server: varzesh3.com
-      sub_tag: pool
-      type: vless
-      udp: true
-      uuid: 9f744daf-6ff1-47cb-bd08-7ae36b610ff5
-      ws-opts:
-        headers:
-            Host: subs.valdoo.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
-        path: /pgcfws-r4
-      xudp: true
     - cipher: aes-128-gcm
       name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-934|pool"
       password: shadowsocks
@@ -5004,7 +5047,7 @@ proxies:
       ws-opts:
         headers:
             Host: fdghyt.com
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
         path: /vpn-wss/fluxor/59011/
       xudp: true
     - client-fingerprint: chrome
@@ -5039,7 +5082,7 @@ proxies:
       ws-opts:
         headers:
             Host: wstg.datasynctrue.online
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
         path: /api/connect
       xudp: true
     - client-fingerprint: ios
@@ -5093,23 +5136,25 @@ proxies:
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1024|pool"
-      network: ws
-      password: humanity
-      port: "443"
-      server: 162.159.244.91
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
+    - encryption: mlkem768x25519plus.native.0rtt.AVXFMcglKPJZWipMVvK2BeYTTGe4QD6Z1Srm7d7Q5Bk
+      flow: xtls-rprx-vision
+      http-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
-        path: /assignment
+            Host:
+                - play.google.com
+        path:
+            - /
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1024|pool"
+      network: http
+      port: "42538"
+      server: sv3.nonpath.ir
+      sub_tag: pool
+      type: vless
+      udp: true
+      uuid: 11a1238e-348b-47c7-ac36-47ed50dd911c
+      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1028|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1026|pool"
       password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
       port: "777"
       server: 45.149.114.171
@@ -5121,7 +5166,7 @@ proxies:
         - h2
         - http/1.1
       client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1032|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1030|pool"
       network: ws
       password: e309e031-991e-4656-9934-44d10deb8fd8
       port: "2053"
@@ -5133,10 +5178,10 @@ proxies:
       udp: true
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
         path: /0962
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1035|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1033|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.216
@@ -5160,25 +5205,8 @@ proxies:
       udp: true
       uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1126|pool"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-        short-id: ""
-      server: 95.179.208.12
-      servername: googleapis.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1139|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1137|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.186
@@ -5186,7 +5214,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1154|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1152|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.42
@@ -5196,7 +5224,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1160|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1158|pool"
       network: tcp
       port: "443"
       server: 51.255.166.202
@@ -5209,7 +5237,7 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1175|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1172|pool"
       network: xhttp
       port: "443"
       server: 23.237.202.252
@@ -5226,7 +5254,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1179|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1176|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5242,7 +5270,7 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       encryption: mlkem768x25519plus.native.0rtt.Y2nFC29UaogbvV_wF4xoOCKOe1ddbWBRjMwTrUaIWxs
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1213|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1210|pool"
       network: tcp
       port: "36037"
       reality-opts:
@@ -5258,7 +5286,7 @@ proxies:
       xudp: true
     - client-fingerprint: unsafe
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1220|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1217|pool"
       network: ws
       port: "443"
       server: 104.16.10.104
@@ -5271,12 +5299,12 @@ proxies:
       ws-opts:
         headers:
             Host: jp3.yohototo.top
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
         path: /tyxyws
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1232|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1230|pool"
       network: ws
       port: "8443"
       server: shop.neexbyte.ir
@@ -5288,11 +5316,11 @@ proxies:
       ws-opts:
         headers:
             Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
         path: ""
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1239|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1237|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.16
@@ -5300,7 +5328,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1254|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1252|pool"
       password: faBAoD54k87UJG7
       port: "2375"
       server: 15.204.247.124
@@ -5308,7 +5336,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1255|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1253|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.174
@@ -5316,15 +5344,23 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1265|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1263|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.212
       sub_tag: pool
       type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1266|pool"
+      password: shadowsocks
+      port: "443"
+      server: 158.173.20.171
+      sub_tag: pool
+      type: ss
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1280|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1278|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.164
@@ -5332,7 +5368,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1281|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1279|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.39
@@ -5340,14 +5376,14 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1285|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1283|pool"
       password: amazonskr05
       port: "443"
       server: 35.181.55.52
       sub_tag: pool
       type: ss
       udp: true
-    - name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1291|pool"
+    - name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1289|pool"
       network: ws
       port: "80"
       server: platform106.golnamakcert.top
@@ -5358,11 +5394,11 @@ proxies:
       ws-opts:
         headers:
             Host: platform106.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
         path: /platform106
       xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1301|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1298|pool"
       password: shadowsocks
       port: "443"
       server: 37.19.198.160
@@ -5372,7 +5408,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1302|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1299|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5389,7 +5425,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1312|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1309|pool"
       network: tcp
       port: "40443"
       reality-opts:
@@ -5403,16 +5439,41 @@ proxies:
       udp: true
       uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
       xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1321|pool"
+      password: amazonskr05
+      port: "443"
+      server: 18.208.223.39
+      sub_tag: pool
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1325|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1322|pool"
       password: Y6R9pAtvxxzmGC
       port: "8888"
       server: 15.204.246.107
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1328|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+        short-id: bbcab8fa80a3
+      server: server.slavkiti.monster
+      servername: www.microsoft.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1333|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1330|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.194
@@ -5420,7 +5481,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1334|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1331|pool"
       password: Y6R9pAtvxxzmGC
       port: "5601"
       server: 51.222.155.113
@@ -5430,7 +5491,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1363|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1360|pool"
       network: tcp
       port: "4109"
       reality-opts:
@@ -5445,7 +5506,7 @@ proxies:
       uuid: 6def81ac-a46f-4490-a81a-eaaa6b257b1c
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1376|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1373|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.9
@@ -5455,7 +5516,7 @@ proxies:
     - client-fingerprint: firefox
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1384|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1381|pool"
       network: tcp
       port: "8443"
       server: 185.147.27.183
@@ -5467,7 +5528,7 @@ proxies:
       uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1390|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1387|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.2
@@ -5477,7 +5538,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1418|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1414|pool"
       network: tcp
       port: "36925"
       reality-opts:
@@ -5491,41 +5552,60 @@ proxies:
       udp: true
       uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
       xudp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1425|pool"
-      network: ws
-      password: humanity
-      port: "443"
-      server: 188.42.145.180
-      skip-cert-verify: false
-      sni: wWw.Volumeroot.cOm.
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36
-        path: /assignment
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1428|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1424|pool"
       password: zDNVedRFPQexG9v
       port: "445"
       server: 51.222.141.125
       sub_tag: pool
       type: ss
       udp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1441|pool"
+      network: xhttp
+      port: "443"
+      server: cdn5.alihapp.com
+      servername: cdn5.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn5.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1451|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1445|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.199
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: safari
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1460|pool"
+      network: xhttp
+      port: "443"
+      server: 46.33.11.36
+      servername: edge2.sickok.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f65b49ed-d3e6-46b3-9f92-1cab485e4a0e
+      xhttp-opts:
+        mode: stream-up
+        path: /api/v1/ingest/KczWgyXedh
+      xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1472|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1465|pool"
       password: 4efe1af272e7292139b889f6a63ee071
       port: "18766"
       server: 64.74.163.69
@@ -5535,7 +5615,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1474|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1467|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5550,7 +5630,24 @@ proxies:
       uuid: 719b9354-45e2-4718-8709-d965b64554db
       xudp: true
     - client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1507|pool"
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1501|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.202
+      servername: yahoo.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1502|pool"
       password: UX82473651
       port: "443"
       server: meet-goshawk.rooster465.autos
@@ -5560,7 +5657,7 @@ proxies:
       type: trojan
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1513|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1508|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.208
@@ -5570,7 +5667,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1520|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1515|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5584,8 +5681,63 @@ proxies:
       udp: true
       uuid: 11a1238e-348b-47c7-ac36-47ed50dd911c
       xudp: true
+    - encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1517|pool"
+      network: ws
+      port: "80"
+      server: ov-germany1.09vpn.com
+      sub_tag: pool
+      type: vless
+      udp: true
+      uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+      ws-opts:
+        headers:
+            Host: OV-Germany1.09vpn.com
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /vless/
+      xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1524|pool"
+      network: xhttp
+      port: "443"
+      server: cdn.alihapp.com
+      servername: cdn.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1543|pool"
+      network: xhttp
+      port: "443"
+      server: cdn2.alihapp.com
+      servername: cdn2.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn2.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1550|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1546|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.34
@@ -5593,17 +5745,37 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1560|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1556|pool"
       password: 3eOFeNssde7PYYMv
       port: "443"
       server: 84.247.155.196
       sub_tag: pool
       type: ss
       udp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1589|pool"
+      network: xhttp
+      port: "443"
+      server: cdn9.alihapp.com
+      servername: cdn9.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn9.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1598|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1595|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5618,7 +5790,7 @@ proxies:
       uuid: 63c5f8b3-3d3d-46a9-ae1f-58635cdaf891
       xudp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1604|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1601|pool"
       password: G5p6ww4o67HB
       port: "8388"
       server: 108.181.118.10
@@ -5626,40 +5798,41 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1611|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1608|pool"
       password: shadowsocks
       port: "443"
       server: 37.19.198.236
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1619|pool"
-      network: tcp
-      port: "40443"
-      reality-opts:
-        public-key: oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE
-        short-id: 2bc0
-      server: private.netraidly.ru
-      servername: deepl.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
-      xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1620|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1616|pool"
       password: shadowsocks
       port: "443"
       server: 156.146.38.167
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: unsafe
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1654|pool"
+      network: ws
+      port: "443"
+      server: 104.17.189.78
+      servername: a.cwvps.eu.org
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+      ws-opts:
+        headers:
+            Host: a.cwvps.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: /ws
+      xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1708|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1704|pool"
       password: XKFKl2rULjIp74
       port: "8008"
       server: 185.226.172.8
@@ -5667,7 +5840,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1709|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1705|pool"
       password: RexnBgU7EV5ADxG
       port: "7001"
       server: 213.202.208.199
@@ -5675,7 +5848,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1722|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1718|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.66
@@ -5685,7 +5858,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1733|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1729|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5699,12 +5872,38 @@ proxies:
       udp: true
       uuid: ca990a85-cb33-44af-bb17-61b30b43d51e
       xudp: true
+    - client-fingerprint: unsafe
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1730|pool"
+      network: ws
+      port: "443"
+      server: 104.21.34.106
+      servername: jp3.yohototo.top
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+      ws-opts:
+        headers:
+            Host: jp3.yohototo.top
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+        path: /tyxyws
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1757|pool"
+      password: qwerREWQ@@
+      port: "4652"
+      server: p141.panda001.net
+      sub_tag: pool
+      type: ss
+      udp: true
     - alpn:
         - h2
         - http/1.1
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1776|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1772|pool"
       network: xhttp
       port: "2053"
       server: dismissaltree.net
@@ -5722,19 +5921,11 @@ proxies:
             max-connections: "0"
         x-padding-bytes: 100-1000
       xudp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1783|pool"
-      password: amazonskr05
-      port: "443"
-      server: 23.22.158.187
-      sub_tag: pool
-      type: ss
-      udp: true
     - alpn:
         - h2
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1788|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1784|pool"
       network: ws
       port: "2053"
       server: freesocks.work
@@ -5747,11 +5938,31 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
       xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1799|pool"
+      network: xhttp
+      port: "443"
+      server: cdn10.alihapp.com
+      servername: cdn10.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn10.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1804|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1800|pool"
       password: shadowsocks
       port: "443"
       server: 173.244.56.6
@@ -5759,7 +5970,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1810|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1806|pool"
       password: kDWvXYZoTBcGkC4
       port: "8882"
       server: 15.204.233.41
@@ -5767,7 +5978,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1811|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1807|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.35
@@ -5777,7 +5988,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1835|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1831|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5794,7 +6005,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1844|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1840|pool"
       network: tcp
       port: "40443"
       reality-opts:
@@ -5810,7 +6021,7 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1846|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1842|pool"
       network: ws
       port: "443"
       server: 117.55.233.87
@@ -5823,11 +6034,31 @@ proxies:
       ws-opts:
         headers:
             Host: s3ws.ragingbull.de5.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
         path: /wsrb7k2m
       xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1880|pool"
+      network: xhttp
+      port: "443"
+      server: cdn3.alihapp.com
+      servername: cdn3.alihapp.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+      xhttp-opts:
+        host: cdn3.alihapp.com
+        mode: auto
+        path: /
+      xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1908|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1904|pool"
       password: g5MeD6Ft3CWlJId
       port: "5003"
       server: 51.222.155.32
@@ -5837,7 +6068,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1919|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1915|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5852,7 +6083,7 @@ proxies:
       uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
       xudp: true
     - cipher: aes-128-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1922|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1918|pool"
       password: shadowsocks
       port: "443"
       server: 156.146.38.170
@@ -5860,32 +6091,15 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1944|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1940|pool"
       password: itzvpn@321
       port: "8388"
       server: 57.131.48.45
       sub_tag: pool
       type: ss
       udp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1946|pool"
-      network: ws
-      password: humanity
-      port: "443"
-      server: 104.21.57.25
-      skip-cert-verify: false
-      sni: www.volumeroot.com
-      sub_tag: pool
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
-        path: /assignment
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1947|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1943|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.18
@@ -5893,7 +6107,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1952|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1948|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "443"
       server: 82.38.31.174
@@ -5902,7 +6116,7 @@ proxies:
       udp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1955|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1951|pool"
       network: tcp
       port: "8080"
       reality-opts:
@@ -5917,7 +6131,7 @@ proxies:
       uuid: 59ab9bbf-3f08-4992-bbf3-4faddceb8e49
       xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1961|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1957|pool"
       password: kDWvXYZoTBcGkC4
       port: "8882"
       server: 51.222.136.236
@@ -5925,7 +6139,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1962|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1958|pool"
       password: pKEW8JPByTVTLtM
       port: "4444"
       server: 15.204.247.206
@@ -5935,7 +6149,7 @@ proxies:
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1971|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1968|pool"
       network: tcp
       port: "443"
       reality-opts:
@@ -5951,7 +6165,7 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1975|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1972|pool"
       network: ws
       port: "8443"
       server: 188.114.96.2
@@ -5964,11 +6178,28 @@ proxies:
       ws-opts:
         headers:
             Host: shop.neexbyte.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
         path: ""
       xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1973|pool"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
+        short-id: 4b523a98e1bbd15b
+      server: 144.31.241.80
+      servername: po.skfv-mirror.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+      xudp: true
     - cipher: aes-256-gcm
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2000|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1997|pool"
       password: XKFKl2rULjIp74
       port: "8008"
       server: 141.164.45.187
@@ -5976,7 +6207,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2034|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2031|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
       port: "8080"
       server: 82.38.31.203
@@ -5984,7 +6215,7 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2036|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2033|pool"
       password: oZIoA69Q8yhcQV8ka3Pa3A
       port: "8080"
       server: 82.38.31.13
@@ -5993,7 +6224,7 @@ proxies:
       udp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2037|pool"
+      name: "\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-2034|pool"
       network: ws
       port: "443"
       server: 43.174.193.1
@@ -6006,39 +6237,45 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
         path: /fp
       xudp: true
-    - client-fingerprint: chrome
+    - client-fingerprint: unsafe
       name: 美国+CloudFlare节点|pool
       network: ws
       port: "443"
-      server: 104.26.4.2
-      servername: ccc.010304.xyz
+      server: 104.16.10.185
+      servername: v2ray.simspeedup.com
       sub_tag: pool
       tls: true
       type: vless
       udp: true
-      uuid: d342d11e-d224-4463-b982-532309285094
+      uuid: 3c52e091-6714-4915-949f-2149fe69951b
       ws-opts:
         headers:
-            Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
-        path: /fp=chrome
+            Host: v2ray.simspeedup.com
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+        path: /ws
       xudp: true
-    - down: ""
-      fingerprint: ""
-      name: 罗马尼亚+V2CROSS.COM|pool
-      obfs: ""
-      obfs-password: ""
-      password: 19f72087-4591-4d72-930b-2697078ec2be
-      port: "18333"
-      server: us3.xiaoliyu.cyou
-      skip-cert-verify: true
-      sni: us3.xiaoliyu.cyou
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: 美国+CloudFlare节点-01|pool
+      network: ws
+      port: "8443"
+      server: www.large-files.info
+      servername: www.large-files.info
       sub_tag: pool
-      type: hysteria2
-      up: ""
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+      ws-opts:
+        headers:
+            Host: www.large-files.info
+            User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2
+        path: /var/www/html/video/preview/download/i8o0la
+      xudp: true
     - alpn:
         - h3
         - h2
@@ -6057,7 +6294,7 @@ proxies:
       ws-opts:
         headers:
             Host: snip.edgeoneai.cc.cd
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
         path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
       xudp: true
     - client-fingerprint: chrome
@@ -6074,25 +6311,144 @@ proxies:
       ws-opts:
         headers:
             Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
         path: /fp=chrome
       xudp: true
     - client-fingerprint: chrome
-      name: CA【机场推荐：https://a9a.xyz】28|pool
+      name: DE【机场推荐：https://a9a.xyz】14|pool
       network: ws
-      port: "443"
-      server: www.5199dy.com
-      servername: ccc.010304.xyz
+      port: "2083"
+      server: 159.195.5.79
+      servername: s4ws.ragingbull.de5.net
       sub_tag: pool
       tls: true
       type: vless
       udp: true
-      uuid: d342d11e-d224-4463-b982-532309285094
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
       ws-opts:
         headers:
-            Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
-        path: /fp=chrome
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: US【机场推荐：https://a9a.xyz】15|pool
+      network: ws
+      port: "443"
+      server: 153.75.81.16
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: SG【机场推荐：https://a9a.xyz】17|pool
+      network: ws
+      port: "443"
+      server: 128.199.128.117
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: DE【机场推荐：https://a9a.xyz】18|pool
+      network: ws
+      port: "443"
+      server: 209.38.225.184
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: DE【机场推荐：https://a9a.xyz】19|pool
+      network: ws
+      port: "443"
+      server: 46.101.110.88
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: CA【机场推荐：https://a9a.xyz】21|pool
+      network: ws
+      port: "443"
+      server: 188.114.96.3
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: CA【机场推荐：https://a9a.xyz】22|pool
+      network: ws
+      port: "2087"
+      server: 188.114.97.3
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: /wsrb7k2m
+      xudp: true
+    - client-fingerprint: chrome
+      name: KR【机场推荐：https://a9a.xyz】24|pool
+      network: ws
+      port: "443"
+      server: 161.118.153.136
+      servername: s4ws.ragingbull.de5.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+      ws-opts:
+        headers:
+            Host: s4ws.ragingbull.de5.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /wsrb7k2m
       xudp: true
     - client-fingerprint: chrome
       name: US【机场推荐：https://a9a.xyz】30|pool
@@ -6108,9 +6464,39 @@ proxies:
       ws-opts:
         headers:
             Host: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+            User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko) Chrome/v1.0.0 Safari/538.1
         path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
       xudp: true
+    - client-fingerprint: chrome
+      name: 美国+CloudFlare节点-02|pool
+      network: ws
+      port: "443"
+      server: 104.26.4.2
+      servername: ccc.010304.xyz
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: d342d11e-d224-4463-b982-532309285094
+      ws-opts:
+        headers:
+            Host: ccc.010304.xyz
+            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+        path: /fp=chrome
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: 罗马尼亚+V2CROSS.COM|pool
+      obfs: ""
+      obfs-password: ""
+      password: 19f72087-4591-4d72-930b-2697078ec2be
+      port: "18333"
+      server: us3.xiaoliyu.cyou
+      skip-cert-verify: true
+      sni: us3.xiaoliyu.cyou
+      sub_tag: pool
+      type: hysteria2
+      up: ""
     - down: ""
       fingerprint: ""
       name: '@FarazV2ray #1|pool'
@@ -6124,9 +6510,11 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
-    - down: ""
+    - alpn:
+        - h3
+      down: ""
       fingerprint: ""
-      name: "\U0001F1EB\U0001F1F7@FreakConfig|pool"
+      name: '@V2raySaman #1|pool'
       obfs: salamander
       obfs-password: ec66908dbc46e6920143d9b684adf277
       password: ca78f919e6
@@ -6134,6 +6522,19 @@ proxies:
       server: 155.94.134.183
       skip-cert-verify: false
       sni: srv-3fc7c9.21freedom.net
+      sub_tag: pool
+      type: hysteria2
+      up: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1EB\U0001F1EE188294 | ⚡️Telegram = t.me/S...|pool"
+      obfs: ""
+      obfs-password: ""
+      password: d402d4c0b8354a90b70bb2566dce9a08
+      port: "8443"
+      server: i.wareznet.ru
+      skip-cert-verify: false
+      sni: i.wareznet.ru
       sub_tag: pool
       type: hysteria2
       up: ""
@@ -6152,26 +6553,13 @@ proxies:
       up: ""
     - down: ""
       fingerprint: ""
-      name: "\U0001F6E0️15@oneclickvpnkeys|pool"
+      name: "\U0001F41E31@oneclickvpnkeys|pool"
       obfs: ""
       obfs-password: ""
       password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
       port: "8443"
-      server: 77.74.123.104
+      server: 77.74.123.98
       skip-cert-verify: true
-      sni: grape-test-italy.dynuddns.net
-      sub_tag: pool
-      type: hysteria2
-      up: ""
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F6E0️13@oneclickvpnkeys|pool"
-      obfs: ""
-      obfs-password: ""
-      password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-      port: "8443"
-      server: 77.74.123.105
-      skip-cert-verify: false
       sni: grape-test-italy.dynuddns.net
       sub_tag: pool
       type: hysteria2
@@ -6200,25 +6588,8 @@ proxies:
       ws-opts:
         headers:
             Host: uae.unixzone.us
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
         path: /
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F8\U0001F1EC[www.v2nodes.com] vless-SG #2|pool"
-      network: ws
-      port: "443"
-      server: cf.090227.xyz
-      servername: ccc.010304.xyz
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: d342d11e-d224-4463-b982-532309285094
-      ws-opts:
-        headers:
-            Host: ccc.010304.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
-        path: /fp=chrome
       xudp: true
     - name: "\U0001F1F2\U0001F1FE[www.v2nodes.com] vless-MY-1... #1|pool"
       network: ws
@@ -6231,7 +6602,7 @@ proxies:
       ws-opts:
         headers:
             Host: platform101.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
         path: /platform101
       xudp: true
     - name: "\U0001F1F2\U0001F1FE[www.v2nodes.com] vless-MY-1... #4|pool"
@@ -6246,8 +6617,22 @@ proxies:
       ws-opts:
         headers:
             Host: platform115.halalkhor.info
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
         path: /platform115
+      xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0[www.v2nodes.com] vless-HK-1... #2|pool"
+      network: tcp
+      port: "11907"
+      server: 195.58.144.56
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
       xudp: true
     - client-fingerprint: random
       grpc-opts:
@@ -6263,27 +6648,61 @@ proxies:
       udp: true
       uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
       xudp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1F0\U0001F1F7[www.v2nodes.com] ss-KR-1185...|pool"
-      password: faBAoD54k87UJG7
-      port: "2376"
-      server: 141.164.45.187
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F3\U0001F1F1 荷兰 | NLD #2|pool"
+      obfs: ""
+      obfs-password: ""
+      password: 19f72087-4591-4d72-930b-2697078ec2be
+      port: "18333"
+      server: us3.xiaoliyu.cyou
+      skip-cert-verify: true
+      sni: ""
+      sub_tag: pool
+      type: hysteria2
+      up: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F8\U0001F1EC 新加坡 | SGP #2|pool"
+      obfs: ""
+      obfs-password: ""
+      password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+      port: "443"
+      server: 13.212.248.1
+      skip-cert-verify: true
+      sni: www.bing.com
+      sub_tag: pool
+      type: hysteria2
+      up: ""
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F8\U0001F1EC 新加坡 | SGP #5|pool"
+      password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+      port: "8443"
+      server: 13.212.248.1
       sub_tag: pool
       type: ss
       udp: true
     - down: ""
       fingerprint: ""
-      name: "\U0001F1ED\U0001F1F0HK_1|1.8MB/s|pool"
+      name: "\U0001F1FA\U0001F1E6 乌克兰 | UKR #1|pool"
       obfs: ""
       obfs-password: ""
-      password: 19f72087-4591-4d72-930b-2697078ec2be
-      port: "4433"
-      server: hk2.xiaoliyu.cyou
+      password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+      port: "8443"
+      server: 103.126.51.50
       skip-cert-verify: true
-      sni: hk2.xiaoliyu.cyou
+      sni: ocober-romania-new.yyuyy.com
       sub_tag: pool
       type: hysteria2
       up: ""
+    - cipher: aes-256-cfb
+      name: "\U0001F1FA\U0001F1F8 美国 | USA #3|pool"
+      password: amazonskr05
+      port: "443"
+      server: 100.48.94.91
+      sub_tag: pool
+      type: ss
+      udp: true
     - down: ""
       fingerprint: ""
       name: 香港 01|pool
@@ -6650,6 +7069,19 @@ proxies:
       up: ""
     - down: ""
       fingerprint: ""
+      name: 香港 46|pool
+      obfs: salamander
+      obfs-password: c8827ab99e316c5bd414e21afa915ddf
+      password: 8294f130408299df8cab08c80bf6f819
+      port: "443"
+      server: 24.233.8.109
+      skip-cert-verify: true
+      sni: www.bing.com
+      sub_tag: pool
+      type: hysteria2
+      up: ""
+    - down: ""
+      fingerprint: ""
       name: 香港 47|pool
       obfs: ""
       obfs-password: ""
@@ -6700,6 +7132,18 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
+    - client-fingerprint: chrome
+      name: 香港 64|pool
+      network: tcp
+      port: "11907"
+      server: 195.58.144.56
+      servername: 195.58.144.56
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+      xudp: true
     - cipher: chacha20-ietf-poly1305
       name: "\U0001F1F3\U0001F1F1NL_10|5.8MB/s 01|pool"
       password: k1dBOmOB4oqi7Ump37a1bQ
@@ -6949,7 +7393,7 @@ proxies:
       ws-opts:
         headers:
             Host: uae.unixzone.us
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
         path: /
       xudp: true
     - cipher: chacha20-ietf-poly1305
@@ -7286,14 +7730,6 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
-    - cipher: aes-256-cfb
-      name: "\U0001F1F5\U0001F1F1PL_12|2.1MB/s|A004-260618 01|pool"
-      password: N7j3pdTYkKmsy8CR
-      port: "9095"
-      server: 217.30.10.44
-      sub_tag: pool
-      type: ss
-      udp: true
     - cipher: aes-256-cfb
       name: "\U0001F1F1\U0001F1FBLV_4|2.0MB/s|A004-260618 01|pool"
       password: 37Z4TFCYhfxcpc9Q
@@ -7752,6 +8188,23 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
+    - alpn:
+        - http/1.1
+      client-fingerprint: unsafe
+      name: "\U0001F1F3\U0001F1F1NL_151|1.8MB/s|M003-260806 01|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 104.21.33.59
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+        path: /assignment
     - cipher: aes-256-cfb
       name: "\U0001F1F1\U0001F1F9LT_2|1.8MB/s|A004-260618 01|pool"
       password: Lp27rqyJq72bZsqX
@@ -7784,6 +8237,24 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - client-fingerprint: firefox
+      encryption: none
+      name: "\U0001F1EB\U0001F1F7FR_1255|4.4MB/s 01|pool"
+      network: xhttp
+      port: "32202"
+      reality-opts:
+        public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
+        short-id: f57d8f26
+      server: 62.210.24.143
+      servername: www.amazon.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
+      xhttp-opts:
+        path: /G3EEoH63
+      xudp: true
     - down: ""
       fingerprint: ""
       name: "\U0001F1FA\U0001F1F8US_408|903KB/s|A004-260618 01|pool"
@@ -7988,6 +8459,21 @@ proxies:
       type: hysteria2
       up: ""
     - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7FR_1347|916KB/s|M003-260806 01|pool"
+      network: ws
+      password: humanity
+      port: "443"
+      server: 193.239.160.134
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+        path: /assignment
+    - client-fingerprint: chrome
       name: "\U0001F1F0\U0001F1F7KR_35|523KB/s|A004-260618 01|pool"
       network: tcp
       password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
@@ -8108,6 +8594,35 @@ proxies:
         host: ger-02.letsgodance.site
         path: /xh
       xudp: true
+    - client-fingerprint: qq
+      flow: xtls-rprx-vision
+      name: "\U0001F1EE\U0001F1F3IN_19|560KB/s|A004-260618 01|pool"
+      network: tcp
+      port: "40443"
+      reality-opts:
+        public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+        short-id: 88b6
+      server: hydra.yokkastars.com
+      servername: deepl.com
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1EB\U0001F1F7FR_2083|7.6MB/s 01|pool"
+      obfs: ""
+      obfs-password: ""
+      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      port: "443"
+      server: vpn-fr-001.fastervpn.world
+      skip-cert-verify: true
+      sni: vpn-fr-001.fastervpn.world
+      sub_tag: pool
+      type: hysteria2
+      up: ""
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
       name: "\U0001F1FA\U0001F1F8US_557|267KB/s|C002-260622 01|pool"
@@ -8190,19 +8705,6 @@ proxies:
       udp: true
       uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
       xudp: true
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1F3\U0001F1F1NL_220|342KB/s|A001-260618 01|pool"
-      obfs: salamander
-      obfs-password: HysteriaHowdy
-      password: HowdyHysteria2023w0W
-      port: "8443"
-      server: hysteria.udpgw.com
-      skip-cert-verify: true
-      sni: sni-here.com
-      sub_tag: pool
-      type: hysteria2
-      up: ""
     - encryption: none
       name: "\U0001F1EE\U0001F1F9IT_40|3.2MB/s|C002-260622 01|pool"
       network: tcp
@@ -8337,23 +8839,6 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8US_728|103KB/s|T001-260618 01|pool"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
-        short-id: ""
-      server: 47.251.25.74
-      servername: www.amazon.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 18805ff3-b420-45de-af18-93be14024ae8
-      xudp: true
     - down: ""
       fingerprint: ""
       name: "\U0001F1E8\U0001F1EDCH_7|2.3MB/s|R002-260618 01|pool"
@@ -8367,14 +8852,6 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
-    - cipher: aes-256-cfb
-      name: "\U0001F1F1\U0001F1FBLV_17|2.2MB/s|A004-260618 01|pool"
-      password: rpgbNnU9rDDU4aWZ
-      port: "9094"
-      server: 185.135.86.175
-      sub_tag: pool
-      type: ss
-      udp: true
     - client-fingerprint: firefox
       name: "\U0001F1E8\U0001F1E6CA_38|1.5MB/s|A004-260618 01|pool"
       network: raw
@@ -8406,6 +8883,21 @@ proxies:
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7FR_2189|1.3MB/s|X001-260618 01|pool"
+      network: ws
+      password: humanity
+      port: "2053"
+      server: 89.150.34.41
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      sub_tag: pool
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36
+        path: /assignment
     - encryption: none
       name: "\U0001F1EE\U0001F1F9IT_52|4.3MB/s|M003-260806 01|pool"
       network: tcp
@@ -8417,6 +8909,23 @@ proxies:
       udp: true
       uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5JP_43|392KB/s|A004-260618 01|pool"
+      network: ws
+      port: "443"
+      server: 162.159.254.3
+      servername: jp3.yohototo.top
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+      ws-opts:
+        headers:
+            Host: jp3.yohototo.top
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+        path: /tyxyws
+      xudp: true
     - cipher: aes-256-cfb
       name: "\U0001F1EE\U0001F1F9IT_53|1.9MB/s|A004-260618 01|pool"
       password: 9XwYyZsK8SNzQDtY
@@ -8425,6 +8934,33 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1FA\U0001F1F8US_768|858KB/s|B007-260618 01|pool"
+      password: pKEW8JPByTVTLtM
+      port: "4444"
+      server: 15.204.247.244
+      sub_tag: pool
+      type: ss
+      udp: true
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1F3\U0001F1F1NL_323|3.3MB/s|B007-260618 01|pool"
+      network: xhttp
+      port: "443"
+      server: 206.71.158.125
+      servername: dey.lnmarketplace.net
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+      xhttp-opts:
+        host: dey.lnmarketplace.net
+        mode: stream-one
+        path: /kavir
+      xudp: true
     - encryption: none
       name: "\U0001F1EE\U0001F1F9IT_54|3.7MB/s|M002-260618 01|pool"
       network: tcp
@@ -8444,6 +8980,14 @@ proxies:
       sub_tag: pool
       type: ss
       udp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F5\U0001F1F1PL_38|2.2MB/s|A004-260618 01|pool"
+      password: S7KwUu7yBy58S3Ga
+      port: "9042"
+      server: 217.30.10.44
+      sub_tag: pool
+      type: ss
+      udp: true
     - down: ""
       fingerprint: ""
       name: "\U0001F1FA\U0001F1F8US_779|1.0MB/s|R002-260618 01|pool"
@@ -8454,19 +8998,6 @@ proxies:
       server: 155.117.19.17
       skip-cert-verify: true
       sni: www.bing.com
-      sub_tag: pool
-      type: hysteria2
-      up: ""
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1E9\U0001F1EADE_147|2.6MB/s|C002-260622 01|pool"
-      obfs: ""
-      obfs-password: ""
-      password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-      port: "4433"
-      server: de1.xiaoliyu.cyou
-      skip-cert-verify: true
-      sni: 127.0.0.1
       sub_tag: pool
       type: hysteria2
       up: ""
@@ -8516,21 +9047,6 @@ proxies:
       sub_tag: pool
       type: hysteria2
       up: ""
-    - client-fingerprint: firefox
-      name: "\U0001F1E9\U0001F1EADE_158|441KB/s|A004-260618 01|pool"
-      network: tcp
-      port: "2053"
-      reality-opts:
-        public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-        short-id: 4d14da19b19cfc8c
-      server: 162.55.242.208
-      servername: www.cloudflare.com
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-      xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
@@ -8563,6 +9079,24 @@ proxies:
       type: vless
       udp: true
       uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+      xudp: true
+    - client-fingerprint: unsafe
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_847|68KB/s|T001-260618 01|pool"
+      network: ws
+      port: "443"
+      server: 104.16.10.185
+      servername: a.cwvps.eu.org
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+      ws-opts:
+        headers:
+            Host: a.cwvps.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+        path: /ws
       xudp: true
     - down: ""
       fingerprint: ""
@@ -8664,26 +9198,6 @@ proxies:
         mode: auto
         path: /api/v1/upload
       xudp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: 未知 VLESS-126|pool
-      network: ws
-      port: "8443"
-      server: www.large-files.info
-      servername: www.large-files.info
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-      ws-opts:
-        headers:
-            Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
-        path: '%2Fvar%2Fwww%2Fhtml%2Fvideo%2Fpreview%2Fdownload%2Fi8o0la'
-      xudp: true
     - client-fingerprint: chrome
       encryption: none
       name: "\U0001F1FA\U0001F1F8-01|pool"
@@ -8699,25 +9213,8 @@ proxies:
       ws-opts:
         headers:
             Host: fr.api-music-fa.com
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
         path: /api/voip/updates/static/fr2035
-      xudp: true
-    - client-fingerprint: qq
-      encryption: none
-      flow: xtls-rprx-vision
-      name: FREE_SC4RUSS-01|pool
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-        short-id: 46babe29a750b634
-      server: 194.110.207.50
-      servername: kibi-institut.de
-      sub_tag: pool
-      tls: true
-      type: vless
-      udp: true
-      uuid: a0a6b481-e6b1-419c-887c-f514ea4e8c0d
       xudp: true
     - encryption: none
       name: "CA \U0001F1E8\U0001F1E6 | @Raydikalx | 774F0F|pool"
@@ -8732,7 +9229,7 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net
       xudp: true
     - encryption: none
@@ -8748,7 +9245,7 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net
       xudp: true
     - name: '[OpenRay] Dynamic-30690|pool'
@@ -8763,8 +9260,25 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net
+      xudp: true
+    - client-fingerprint: firefox
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1EB\U0001F1EE Финляндия-01|pool"
+      network: tcp
+      port: "8443"
+      reality-opts:
+        public-key: V_AnDtQn2g3kTFu19MUBCwA0LzmYeU68FlnIHcvlADg
+        short-id: ""
+      server: 78.17.209.157
+      servername: api-maps.yandex.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: be2568ed-9b3f-4071-86aa-444891fe2887
       xudp: true
     - client-fingerprint: random
       encryption: none
@@ -8782,6 +9296,41 @@ proxies:
         host: de.vip-get.ru
         mode: auto
         path: /api/v4/assets/510f43f4aec5c08be74dbbcb3c964a8bd64815750bdb59ed/
+      xudp: true
+    - client-fingerprint: safari
+      encryption: none
+      name: "\U0001F1EB\U0001F1EE Финляндия, Хельсинки|pool"
+      network: xhttp
+      port: "443"
+      server: fi.vip-get.ru
+      servername: fi.vip-get.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a
+      xhttp-opts:
+        host: fi.vip-get.ru
+        mode: auto
+        path: /assets/v4/sync
+      xudp: true
+    - client-fingerprint: firefox
+      encryption: none
+      name: "\U0001F1EB\U0001F1F7 Франция|pool"
+      network: ws
+      port: "443"
+      server: fr2.vip-get.ru
+      servername: fr2.vip-get.ru
+      sub_tag: pool
+      tls: true
+      type: vless
+      udp: true
+      uuid: db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a
+      ws-opts:
+        headers:
+            Host: ""
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+        path: /api/download
       xudp: true
     - client-fingerprint: random
       encryption: none
@@ -8824,24 +9373,8 @@ proxies:
       ws-opts:
         headers:
             Host: uwu.blueknightnet.qzz.io
-            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
         path: /@BlueKnight_net--@BlueKnight_net
-      xudp: true
-    - encryption: none
-      http-opts:
-        headers:
-            Host:
-                - fast.com
-        path:
-            - /
-      name: "@hat_vpn\U0001F680-ParsNet|pool"
-      network: http
-      port: "2087"
-      server: sub2.silen3eux.ir
-      sub_tag: pool
-      type: vless
-      udp: true
-      uuid: e6b8d3a0-2cb0-48f7-a6b2-0e252eab9a77
       xudp: true
     - client-fingerprint: chrome
       name: "\U0001F1F3\U0001F1F1 Нидерланды #1|pool"
@@ -8857,6 +9390,6 @@ proxies:
       ws-opts:
         headers:
             Host: wstg.datasynctrue.online
-            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
         path: /api/connect
       xudp: true
